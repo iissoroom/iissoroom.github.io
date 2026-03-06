@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Key Room</title>
 
+<style>
+
+body{
+margin:0;
+height:100vh;
+background:#3a3a3a;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:serif;
+}
+
+.key{
+width:120px;
+cursor:pointer;
+transition:transform 0.3s;
+}
+
+.key:hover{
+transform:scale(1.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="key" src="key.png" onclick="enterRoom()">
+
+<script>
+
+function enterRoom(){
+window.location.href="room.html";
+}
+
+</script>
+
+</body>
+
+</html>
