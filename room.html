@@ -3,27 +3,98 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Комната</title>
+<title>Комната IISSO</title>
 
 <style>
 
 body{
 margin:0;
 height:100vh;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+}
 
-background-image:url("room.png");
-background-size:contain;
-background-repeat:no-repeat;
+.room{
+position:relative;
+width:100vw;
+height:100vh;
+background-image:url("room.png"); 
+background-size:cover;
 background-position:center;
-background-color:black;
+background-repeat:no-repeat;
+}
+
+/* зоны дверей */
+.door{
+position:absolute;
+cursor:pointer;
+}
+
+/* мечи */
+.swords{
+left:18%;
+top:38%;
+width:9%;
+height:22%;
+}
+
+/* пентакли */
+.pentacles{
+left:33%;
+top:38%;
+width:9%;
+height:22%;
+}
+
+/* старшие */
+.major{
+left:48%;
+top:36%;
+width:10%;
+height:24%;
+}
+
+/* жезлы */
+.wands{
+left:63%;
+top:38%;
+width:9%;
+height:22%;
+}
+
+/* кубки */
+.cups{
+left:78%;
+top:38%;
+width:9%;
+height:22%;
+}
+
+/* маленькая дверь */
+.author{
+left:73%;
+top:60%;
+width:5%;
+height:12%;
 }
 
 </style>
-
 </head>
 
 <body>
 
-</body>
+<div class="room">
 
+<a class="door swords" href="swords.html"></a>
+<a class="door pentacles" href="pentacles.html"></a>
+<a class="door major" href="major.html"></a>
+<a class="door wands" href="wands.html"></a>
+<a class="door cups" href="cups.html"></a>
+<a class="door author" href="author.html"></a>
+
+</div>
+
+</body>
 </html>
